@@ -15,6 +15,9 @@ int main() {
     float area_em_km;
     float pib;
     int numero_de_pontos_turisticos;
+    float densidade_populacional;
+    float pib_per_capita;
+
 
     printf("Bem vindo ao jogo Super Trunfo!\n");
     printf("Nesse jogo com o tema Países, as cartas serão divididas por estados, com cada estado tendo quatro cartas que representam diferentes cidades.\n");
@@ -44,13 +47,18 @@ int main() {
     printf("Digite o número de pontos turísticos:\n");
     scanf("%d", &numero_de_pontos_turisticos);
 
+    densidade_populacional = populacao / area_em_km;
+    pib_per_capita = ( pib * 1000000000 ) / populacao;
+
     printf("\nResultado da primeira sequência informada:\n");
     printf("Estado: %c\n", estado);
     printf("Código da Carta: %c%s\n", estado, codigo_da_carta);
     printf("Nome da Cidade: %s\n", nome_da_cidade);
     printf("População: %d\n", populacao);
     printf("Área: %.2f Km²\n", area_em_km);
+    printf("Densidade Populacional: %.2f pessoas/Km²\n", densidade_populacional);
     printf("PIB: %.2f bilhões de reais\n", pib);
+    printf("PIB per Capita: %.2f reais\n", pib_per_capita);
     printf("Número de Pontos Turísticos: %d\n", numero_de_pontos_turisticos);
 
     return 0;
