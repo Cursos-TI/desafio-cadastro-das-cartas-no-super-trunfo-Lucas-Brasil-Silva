@@ -1,10 +1,6 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+
 
 int main() {
     
@@ -17,7 +13,6 @@ int main() {
     int numero_de_pontos_turisticos;
     float densidade_populacional;
     float pib_per_capita;
-
 
     printf("Bem vindo ao jogo Super Trunfo!\n");
     printf("Nesse jogo com o tema Países, as cartas serão divididas por estados, com cada estado tendo quatro cartas que representam diferentes cidades.\n");
